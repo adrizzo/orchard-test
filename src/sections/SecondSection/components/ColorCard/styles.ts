@@ -30,4 +30,5 @@ export const ColorDescription = styled.p`
   font-size: 21px;
   line-height: 1.5;
   font-weight: 300;
+  max-width: 315px;
 `;
