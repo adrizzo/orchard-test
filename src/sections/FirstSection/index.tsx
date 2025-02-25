@@ -1,12 +1,13 @@
 import React from 'react';
-import { IntroContainer } from './components/styles';
+import { IntroContainer } from './styles';
 import { Introduction } from './components/Introduction/Introduction';
 import MasonryImages from './components/MasonryImages';
+import contentData from '../../data/content.json';
 
 const FirstSection: React.FC = () => (
   <IntroContainer>
     <MasonryImages />
-    <Introduction />
+    <Introduction content={contentData.firstSection} />
   </IntroContainer>
 );
 

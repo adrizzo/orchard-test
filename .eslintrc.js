@@ -15,8 +15,10 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/require-default-props': 'off',
-    'import/prefer-default-export': 'off', // Allow named exports
-    'max-len': ['error', { code: 120 }], // Increase line length limit
+    'import/prefer-default-export': 'off',
+    'max-len': ['error', { code: 120 }],
+    'quotes': ['error', 'single'],
+    '@typescript-eslint/quotes': ['error', 'single'],
     'react/function-component-definition': [
       'error',
       {
@@ -24,10 +26,15 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        ts: 'never',
+        tsx: 'never',
+        js: 'never',
+        jsx: 'never',
+      },
+    ],
   },
 };

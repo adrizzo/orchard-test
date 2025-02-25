@@ -1,16 +1,21 @@
 import React from 'react';
-import { IntroWrapper } from './styles';
+import {
+  IntroContent, IntroSubTitle, IntroTitle, IntroWrapper,
+} from './styles';
+import contentData from '../../../../data/content.json';
+import { FirstSectionContent } from '../../../../types/content';
 
-export const Introduction: React.FC = () => (
+interface IntroductionProps {
+  content?: FirstSectionContent;
+}
+
+export const Introduction: React.FC<IntroductionProps> = ({
+  content = contentData.firstSection,
+}) => (
   <IntroWrapper>
-    <h1>WHAT DOES COOKING MEAN?</h1>
-    <div>
-      Is it simply applying heat to a food product? A way of making certain food safe to eat?
-      Or a way to create flavour and make food more appealing? This is just part of what Hervé This,
-      the father of molecular gastronomy, has dedicated his life to finding out.
-      We spoke to him to find out what his experiments have told him.
-      And in the process even discovered the secret to cooking the perfect egg...
-    </div>
-    <div>Feature 3</div>
+    <IntroTitle>{content.title}</IntroTitle>
+    <IntroContent>{content.mainContent}</IntroContent>
+    <IntroSubTitle isBold>{content.subtitle}</IntroSubTitle>
+    <IntroContent isBold>{content.subContent}</IntroContent>
   </IntroWrapper>
 );

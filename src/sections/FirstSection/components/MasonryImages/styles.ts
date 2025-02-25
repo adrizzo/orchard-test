@@ -3,9 +3,8 @@ import styled from 'styled-components';
 export const MasonryGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: repeat(2, 330px);
   gap: 10px;
-  padding: 1rem;
 
   @media (min-width: 320px) and (max-width: 720px) {
     grid-template-columns: 1fr;
@@ -31,11 +30,7 @@ export const StyledImage = styled.img`
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
-
-  @media (min-width: 320px) and (max-width: 720px) {
-    height: auto;
-    object-fit: contain;
-  }
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.05);
