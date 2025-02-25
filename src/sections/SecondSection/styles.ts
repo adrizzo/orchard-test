@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
-  padding: 80px 20px;
   background-color: #0e1414;
+  padding: 0px 147px 120px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -22,15 +27,15 @@ export const Title = styled.h2`
   }
 `;
 
-export const CardsContainer = styled.div`
+export const CardsContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
   max-width: 1480px;
   margin: 0 auto;
-  padding: 0 147px 120px;
 
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media (min-width: 320px) and (max-width: 720px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 `;

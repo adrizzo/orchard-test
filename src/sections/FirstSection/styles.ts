@@ -11,6 +11,6 @@ export const IntroContainer = styled.section`
   
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 25px;
+    padding: 20px;
   };
 `;

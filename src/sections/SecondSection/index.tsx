@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionContainer, Title, CardsContainer } from './components/styles';
+import { SectionContainer, Title, CardsContainer } from './styles';
 import ColorCard from './components/ColorCard';
 import contentData from '../../data/content.json';
 
