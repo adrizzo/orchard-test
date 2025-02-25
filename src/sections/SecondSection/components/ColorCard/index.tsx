@@ -18,6 +18,7 @@ const ColorCard: React.FC<ColorCardProps> = ({ name, description, imageSrc }) =>
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleImageClick = () => {
+    console.log(`Clicked color card: ${name}`);
     setIsModalOpen(true);
   };
 

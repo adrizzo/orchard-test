@@ -8,6 +8,7 @@ const MasonryImages: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const handleImageClick = (imageSrc: string) => {
+    console.log(`Clicked image: ${imageSrc}`);
     setSelectedImage(imageSrc);
   };
 
