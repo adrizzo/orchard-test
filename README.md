@@ -28,10 +28,10 @@ npm install
 ```
 
 ## Project structure
-src/
-│
-├── components/    # Shared components
-├── sections/      # Main page sections
-├── data/          # Content and configuration
-├── types/         # TypeScript type definitions
-└── styles/        # Global styles
+src/__
+│__
+├── components/    # Shared components__
+├── sections/      # Main page sections__
+├── data/          # Content and configuration__
+├── types/         # TypeScript type definitions__
+└── styles/        # Global styles__
