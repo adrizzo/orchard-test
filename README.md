@@ -29,7 +29,8 @@ npm install
 
 ## Project structure
 src/
-├── components/     # Shared components
+│
+├── components/    # Shared components
 ├── sections/      # Main page sections
 ├── data/          # Content and configuration
 ├── types/         # TypeScript type definitions
