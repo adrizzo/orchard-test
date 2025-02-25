@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const SectionContainer = styled.section`
   background-color: #0e1414;
   padding: 0px 147px 120px;
+  max-width: 1480px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
